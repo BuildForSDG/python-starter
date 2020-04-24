@@ -26,61 +26,73 @@ How would someone use what you have built, include URLs to the deployed app, ser
 
 
 ## Setup
-You should have Python 3.5+ installed. 
+You should have **Python 3.5+** installed. 
 
-Clone this repo and change into the directory
+1. Clone this repo and change into the directory
 
-``bash
-git clone https://github.com/BuildForSDG/python-starter.git
-``
+    ``
+    git clone https://github.com/BuildForSDG/python-starter.git
+    ``
 
-Change into repo directory
+2. Change into repo directory
 
-``bash
-cd python-starter
-``
+    ``
+    cd python-starter
+    ``
 
-Install poetry, a dependecy manager for python.
+3. Install poetry, a dependecy manager for python.
 
-On windows, you will need powershell to install it:
+    On windows, you will need powershell to install it:
 
-``
-(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python
-``
+    ``
+    (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python
+    ``
 
-After that you will need to restart the shell to make it operational.
+    After that you will need to restart the shell to make it operational.
 
+    &nbsp;
 
+    On linux and other posix systems (mac included):
 
-On linux and other posix systems (mac included):
+    ``
+    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+    ``
 
-``
-``
+    &nbsp;
 
-``bash
-python3 -m venv .venv/ to create a virtual environment
-source .venv/bin/activate
-``
-Activate and use this environment when implementing your project. Remember to always activate this environment whenever you are working on the project.
+    To check that it is correctly installed, you can check the version:
+    ``
+    poetry --version
+    ``
 
-Run:
+    May be the latest stable version is not installed with the installation script, to update poetry, you can run:
 
-``bash
-pip install poetry
-poetry install
-``
+    ``
+    poetry self update
+    ``
 
-`main.py` is the entry to the project and source code should go into the `src` folder.
+4. With poetry installed, you should install project dependecies by running:
 
-All tests should be written in the `test` folder.
+    ``
+    poetry install
+    ``
+
+    This will install pytest for running tests and flake8, linter for your project.
+
+#### To Note
+`src/app.py` is the entry to the project and source code should go into the `src` folder.
+
+All tests should be written in the `tests` folder. tests/test_src.py is a sample test file that shows how tests should like. Feel free to delete it.
 
 #### Hints
 
-- Test: `pytest`
+- Lint: `poetry run flake8`
+- Run tests using the command: `poetry run pytest`
 - Install dependencies: 
   `poetry add <dependency>`
-  `poetry add --dev <dev-dependency>` for dev dependencies
-- Lint: `composer run php-cs-fixer`
+- Install dev dependencies:
+  `poetry add --dev <dev-dependency>`
+
 
 ## Authors
 
