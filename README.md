@@ -1,6 +1,6 @@
 A one-liner phrase describing this project or app
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/247a9fbe41bb49c5805c1ed945910ddd)](https://www.codacy.com/gh/BuildForSDG/python-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDG/python-starter&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eb9ae9dbd15a489c8e1134b52a4fea67)](https://www.codacy.com/gh/BuildForSDG/javascript-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDG/javascript-starter&amp;utm_campaign=Badge_Grade)
 
 
 ## About
