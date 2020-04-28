@@ -26,12 +26,12 @@ How would someone use what you have built, include URLs to the deployed app, ser
 
 
 ## Setup
-You should have **Python 3.5+** installed. 
+You should have **Python 3.5+** and **git** installed. 
 
-1. Clone this repo and change into the directory
+1. Clone the repo you've created from the template herein and change into the directory
 
     ``
-    git clone https://github.com/BuildForSDG/python-starter.git
+    git clone <Your Repository>
     ``
 
 2. Change into repo directory
@@ -92,6 +92,7 @@ All tests should be written in the `tests` folder. tests/test_src.py is a sample
   `poetry add <dependency>`
 - Install dev dependencies:
   `poetry add --dev <dev-dependency>`
+- Run your project
 
 
 ## Authors
