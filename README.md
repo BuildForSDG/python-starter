@@ -92,7 +92,8 @@ All tests should be written in the `tests` folder. tests/test_src.py is a sample
   `poetry add <dependency>`
 - Install dev dependencies:
   `poetry add --dev <dev-dependency>`
-- Run your project
+- Run your project:
+  `poetry run app`
 
 
 ## Authors
